@@ -1,56 +1,17 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Deneme Bonusu Veren Siteler</title>
-    <style>
-        body { background-color: #1a1c24; color: white; font-family: sans-serif; margin: 0; padding: 10px; }
-        .container { display: flex; flex-direction: column; gap: 15px; }
-        .card { background-color: #242936; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .top-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
-        .brand { display: flex; align-items: center; gap: 10px; }
-        .logo-placeholder { width: 60px; height: 30px; background-color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold; font-size: 10px; }
-        .rating { color: #f4b400; font-size: 14px; }
-        .bonus-text { font-size: 16px; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px; color: #eee; }
-        .payment-methods { display: flex; gap: 10px; margin-bottom: 20px; filter: grayscale(1); opacity: 0.6; }
-        .btn-kaydol { background-color: #3b82f6; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; display: block; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-kaydol:active { transform: scale(0.98); background-color: #2563eb; }
-    </style>
-</head>
-<body>
-
-<div class="container">
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>body { background-color: #000; color: #fff; font-family: 'Arial', sans-serif; margin: 0; padding: 15px; }.container { display: flex; flex-direction: column; gap: 15px; }.card { background: #111; border: 1px solid #333; padding: 15px; border-top: 4px solid #fff; }.card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }.logo-box { width: 45px; height: 45px; background: #fff; color: #000; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; }.site-name { font-size: 17px; font-weight: 900; }.bonus-container { background: #1a1a1a; padding: 10px; margin-bottom: 10px; border-left: 2px solid #fff; }.bonus-label { font-size: 8px; color: #555; }.bonus-value { font-size: 15px; font-weight: 900; }.btn-kaydol { background: #fff; color: #000; border: none; padding: 12px; width: 100%; font-weight: 900; cursor: pointer; }</style></head><body><div class="container">
     <div class="card">
-        <div class="top-row">
-            <div class="brand">
-                <div class="logo-placeholder">BAHİZZ</div>
-                <div class="rating">★★★★★ 5/5</div>
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">DE</div></div>
+            <div class="info-area">
+                <div class="site-name">DENEME</div>
+                <div class="rating">⚪⚫ BANKO ARENA ÖZEL</div>
             </div>
         </div>
-        <div class="bonus-text">Yatırım Şartsız Ve Çekim Limitsiz 500 TL Deneme Bonusu</div>
-        <div class="payment-methods">💳 🏦 📱</div>
-        <a href="https://t.me/denemebonusuverensitelr" class="btn-kaydol">KAYDOLUN</a>
-    </div>
-
-    <div class="card">
-        <div class="top-row">
-            <div class="brand">
-                <div class="logo-placeholder">LORDPALACE</div>
-                <div class="rating">★★★★★ 5/5</div>
-            </div>
+        <div class="bonus-container">
+            <div class="bonus-label">GÜNCEL BONUS</div>
+            <div class="bonus-value">test</div>
         </div>
-        <div class="bonus-text">250 TL Deneme Bonusu</div>
-        <div class="payment-methods">💳 🏦 📱</div>
-        <a href="https://t.me/holibets" class="btn-kaydol">KAYDOLUN</a>
-    </div>
-</div>
-
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-    const tele = window.Telegram.WebApp;
-    tele.expand(); // Uygulamayı tam ekran açar
-</script>
-
-</body>
-</html>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('ponro.com', 'deneme')">ARENAYA GİRİŞ</button>
+        </div>
+    </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>const webapp = window.Telegram.WebApp; webapp.expand(); function showPopup(url, name) { webapp.showConfirm(name.toUpperCase() + " Arenasına gidiyorsunuz?", (c) => { if(c) webapp.openLink(url); }); }</script></body></html>
