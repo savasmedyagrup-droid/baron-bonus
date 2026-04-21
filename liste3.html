@@ -1,56 +1,151 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Deneme Bonusu Veren Siteler</title>
-    <style>
-        body { background-color: #1a1c24; color: white; font-family: sans-serif; margin: 0; padding: 10px; }
-        .container { display: flex; flex-direction: column; gap: 15px; }
-        .card { background-color: #242936; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .top-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; }
-        .brand { display: flex; align-items: center; gap: 10px; }
-        .logo-placeholder { width: 60px; height: 30px; background-color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: black; font-weight: bold; font-size: 10px; }
-        .rating { color: #f4b400; font-size: 14px; }
-        .bonus-text { font-size: 16px; font-weight: bold; margin-bottom: 15px; border-bottom: 1px solid #333; padding-bottom: 10px; color: #eee; }
-        .payment-methods { display: flex; gap: 10px; margin-bottom: 20px; filter: grayscale(1); opacity: 0.6; }
-        .btn-kaydol { background-color: #3b82f6; color: white; text-align: center; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; display: block; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-kaydol:active { transform: scale(0.98); background-color: #2563eb; }
-    </style>
-</head>
-<body>
-
-<div class="container">
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
+    body { background-color: #000000; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 15px; }
+    .container { display: flex; flex-direction: column; gap: 20px; }
+    .card { background: linear-gradient(145deg, #121212, #080808); border-radius: 15px; padding: 18px; border: 1px solid #1a1a1a; box-shadow: 0 10px 20px rgba(0,0,0,0.8); position: relative; overflow: hidden; }
+    .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #ff0000; }
+    .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
+    .logo-box { width: 55px; height: 55px; background: linear-gradient(45deg, #ff0000, #8b0000); color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 24px; }
+    .site-name { font-size: 20px; font-weight: 900; color: #fff; }
+    .rating { color: #ff0000; font-size: 13px; font-weight: 900; margin-top: 2px; }
+    .bonus-container { background: rgba(255, 0, 0, 0.05); border-radius: 10px; padding: 15px; margin-bottom: 15px; text-align: center; border: 1px solid #1a1a1a; }
+    .bonus-value { color: #ffffff; font-size: 19px; font-weight: 900; }
+    .btn-kaydol { background: linear-gradient(45deg, #ff0000, #cc0000); color: white; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; font-size: 15px; text-transform: uppercase; }
+    </style></head><body><div class="container">
     <div class="card">
-        <div class="top-row">
-            <div class="brand">
-                <div class="logo-placeholder">BAHİZZ</div>
-                <div class="rating">★★★★★ 5/5</div>
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">PR</div></div>
+            <div class="info-area">
+                <div class="site-name">Pradabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
             </div>
         </div>
-        <div class="bonus-text">Yatırım Şartsız Ve Çekim Limitsiz 500 TL Deneme Bonusu</div>
-        <div class="payment-methods">💳 🏦 📱</div>
-        <a href="https://t.me/denemebonusuverensitelr" class="btn-kaydol">KAYDOLUN</a>
+        <div class="bonus-container">
+            <div class="bonus-value">1000 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/pradabet', 'Pradabet', 'Pradabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Pradabet Giriş Yap</button>
+        </div>
     </div>
-
     <div class="card">
-        <div class="top-row">
-            <div class="brand">
-                <div class="logo-placeholder">LORDPALACE</div>
-                <div class="rating">★★★★★ 5/5</div>
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">GR</div></div>
+            <div class="info-area">
+                <div class="site-name">Grandpashabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
             </div>
         </div>
-        <div class="bonus-text">250 TL Deneme Bonusu</div>
-        <div class="payment-methods">💳 🏦 📱</div>
-        <a href="https://t.me/holibets" class="btn-kaydol">KAYDOLUN</a>
+        <div class="bonus-container">
+            <div class="bonus-value">500 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/grandpasha', 'Grandpashabet', 'Grandpashabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Grandpashabet Giriş Yap</button>
+        </div>
     </div>
-</div>
-
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-    const tele = window.Telegram.WebApp;
-    tele.expand(); // Uygulamayı tam ekran açar
-</script>
-
-</body>
-</html>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">LO</div></div>
+            <div class="info-area">
+                <div class="site-name">Lordpalace</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">250 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/lordpalace', 'Lordpalace', 'Lordpalace Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Lordpalace Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">RO</div></div>
+            <div class="info-area">
+                <div class="site-name">Romabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">2500 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/romabet', 'Romabet', 'Romabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Romabet Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">BA</div></div>
+            <div class="info-area">
+                <div class="site-name">Bahisbey</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">500₺ Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/bahisbey', 'Bahisbey', 'Bahisbey Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bahisbey Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">BE</div></div>
+            <div class="info-area">
+                <div class="site-name">Betci</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">50 Fs Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/betci', 'Betci', 'Betci Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betci Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">GO</div></div>
+            <div class="info-area">
+                <div class="site-name">Gobahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">1000 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/gobahis', 'Gobahis', 'Gobahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Gobahis Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">İK</div></div>
+            <div class="info-area">
+                <div class="site-name">İki Misli</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">500 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/ikimisli', 'İki Misli', 'İki Misli Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">İki Misli Giriş Yap</button>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-area"><div class="logo-box">CA</div></div>
+            <div class="info-area">
+                <div class="site-name">Casivera</div>
+                <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+            </div>
+        </div>
+        <div class="bonus-container">
+            <div class="bonus-value">1000 Tl Deneme Bonusu</div>
+        </div>
+        <div class="footer-area">
+            <button class="btn-kaydol" onclick="showPopup('https://urllink.live/casivera', 'Casivera', 'Casivera Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Casivera Giriş Yap</button>
+        </div>
+    </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
+    const webapp = window.Telegram.WebApp; webapp.expand(); 
+    function showPopup(url, name, msg) { webapp.showConfirm(msg, (c) => { if(c) webapp.openLink(url); }); }
+    </script></body></html>
