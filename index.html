@@ -1,28 +1,1293 @@
 <!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <style>
-        :root { --gold: #ffea00; --bg: #000000; --card: #111111; }
-        body { background-color: var(--bg); color: white; font-family: -apple-system, sans-serif; margin: 0; padding: 15px; -webkit-user-select: none; }
+        :root { --gold: #ffea00; --bg: #000; --card: #111; }
+        body { background: var(--bg); color: white; font-family: sans-serif; margin: 0; padding: 15px; -webkit-user-select: none; }
         .container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
         .card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 15px; position: relative; overflow: hidden; }
         .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--gold); }
         .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
         .logo-box { width: 50px; height: 50px; background: #222; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--gold); font-size: 20px; }
-        .site-name { font-size: 18px; font-weight: bold; color: #fff; }
-        .rating { font-size: 11px; color: var(--gold); margin-top: 2px; font-weight: bold; }
+        .site-name { font-size: 18px; font-weight: bold; }
+        .rating { font-size: 11px; color: var(--gold); margin-top: 2px; }
         .bonus-box { background: rgba(255, 234, 0, 0.05); border: 1px dashed rgba(255, 234, 0, 0.3); border-radius: 8px; padding: 14px; text-align: center; margin-bottom: 12px; }
-        .bonus-value { font-size: 19px; font-weight: 900; color: #fff; }
-        .btn-gold { background: linear-gradient(135deg, #fffb00 0%, #ffea00 100%); color: #000; border: none; padding: 14px; border-radius: 8px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; }
+        .bonus-value { font-size: 19px; font-weight: 900; }
+        .btn-gold { background: linear-gradient(135deg, #fffb00 0%, #ffea00 100%); color: #000; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; }
     </style></head><body><div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">Hepbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1880₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hepbet', 'Hepbet', 'Hepbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hepbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GR</div>
+            <div class="info-area">
+                <div class="site-name">Grandpasha</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/grandpasha', 'Grandpasha', 'Grandpasha Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Grandpasha Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İB</div>
+            <div class="info-area">
+                <div class="site-name">İbizabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">777FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ibizabet', 'İbizabet', 'İbizabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">İbizabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">Pashagaming</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/pashagaming', 'Pashagaming', 'Pashagaming Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Pashagaming Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betkom</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betkom', 'Betkom', 'Betkom Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betkom Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DO</div>
+            <div class="info-area">
+                <div class="site-name">Dodobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/dodo', 'Dodobet', 'Dodobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Dodobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EP</div>
+            <div class="info-area">
+                <div class="site-name">Epybet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/epybet', 'Epybet', 'Epybet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Epybet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">Romabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/romabet', 'Romabet', 'Romabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Romabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">XB</div>
+            <div class="info-area">
+                <div class="site-name">Xbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/xbahis', 'Xbahis', 'Xbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Xbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">OT</div>
+            <div class="info-area">
+                <div class="site-name">Otobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/otobet', 'Otobet', 'Otobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Otobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betbon</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betbon', 'Betbon', 'Betbon Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betbon Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">Mariobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/mariobonus', 'Mariobet', 'Mariobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Mariobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TA</div>
+            <div class="info-area">
+                <div class="site-name">Tarafbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/tarafbet', 'Tarafbet', 'Tarafbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Tarafbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">Bahiscom</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bahisbonus', 'Bahiscom', 'Bahiscom Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bahiscom Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Beluga</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/beluga', 'Beluga', 'Beluga Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Beluga Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betorbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betorbet', 'Betorbet', 'Betorbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betorbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hızlıcasino</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hizlicasino', 'Hızlıcasino', 'Hızlıcasino Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hızlıcasino Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TR</div>
+            <div class="info-area">
+                <div class="site-name">Truvabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/truvabet', 'Truvabet', 'Truvabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Truvabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VE</div>
+            <div class="info-area">
+                <div class="site-name">Venüsbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/venusbet', 'Venüsbet', 'Venüsbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Venüsbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LU</div>
+            <div class="info-area">
+                <div class="site-name">Luxbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/luxbet', 'Luxbet', 'Luxbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Luxbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NO</div>
+            <div class="info-area">
+                <div class="site-name">Norabahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/norabahis', 'Norabahis', 'Norabahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Norabahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">OR</div>
+            <div class="info-area">
+                <div class="site-name">Orisbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2000FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/orisbet', 'Orisbet', 'Orisbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Orisbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">AC</div>
+            <div class="info-area">
+                <div class="site-name">Acarbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/acarbet', 'Acarbet', 'Acarbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Acarbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hilbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">333FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hilbet', 'Hilbet', 'Hilbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hilbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TR</div>
+            <div class="info-area">
+                <div class="site-name">Trbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/trbet', 'Trbet', 'Trbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Trbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betpipo</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betpipo', 'Betpipo', 'Betpipo Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betpipo Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SL</div>
+            <div class="info-area">
+                <div class="site-name">Sloto</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/sloto', 'Sloto', 'Sloto Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Sloto Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BU</div>
+            <div class="info-area">
+                <div class="site-name">Bullbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bullbahis', 'Bullbahis', 'Bullbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bullbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ES</div>
+            <div class="info-area">
+                <div class="site-name">Esbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/esbet', 'Esbet', 'Esbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Esbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">JO</div>
+            <div class="info-area">
+                <div class="site-name">Jojova</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/jojova', 'Jojova', 'Jojova Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Jojova Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GO</div>
+            <div class="info-area">
+                <div class="site-name">Goldenbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/goldenbahis', 'Goldenbahis', 'Goldenbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Goldenbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NE</div>
+            <div class="info-area">
+                <div class="site-name">Nerobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/nerobet', 'Nerobet', 'Nerobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Nerobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NG</div>
+            <div class="info-area">
+                <div class="site-name">Ngsbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ngsbahis', 'Ngsbahis', 'Ngsbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Ngsbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MI</div>
+            <div class="info-area">
+                <div class="site-name">Milbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/milbet', 'Milbet', 'Milbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Milbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GE</div>
+            <div class="info-area">
+                <div class="site-name">Gettobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/gettobet', 'Gettobet', 'Gettobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Gettobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betrupi</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">111₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betrupi', 'Betrupi', 'Betrupi Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betrupi Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">Casicosta</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/casicosta', 'Casicosta', 'Casicosta Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Casicosta Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VU</div>
+            <div class="info-area">
+                <div class="site-name">Vurdum</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/vurdum', 'Vurdum', 'Vurdum Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Vurdum Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ME</div>
+            <div class="info-area">
+                <div class="site-name">Meritwin</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/meritwin', 'Meritwin', 'Meritwin Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Meritwin Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">Robobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/robobet', 'Robobet', 'Robobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Robobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VE</div>
+            <div class="info-area">
+                <div class="site-name">Venombet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">555₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/venombet', 'Venombet', 'Venombet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Venombet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">Palazzo</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/palazzo', 'Palazzo', 'Palazzo Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Palazzo Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">Starora</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/starora', 'Starora', 'Starora Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Starora Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">FI</div>
+            <div class="info-area">
+                <div class="site-name">Fixbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/fixbet', 'Fixbet', 'Fixbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Fixbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">Matadorbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/matador', 'Matadorbet', 'Matadorbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Matadorbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ZB</div>
+            <div class="info-area">
+                <div class="site-name">Zbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/zbahis', 'Zbahis', 'Zbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Zbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">WI</div>
+            <div class="info-area">
+                <div class="site-name">Wingamb</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/wingamb', 'Wingamb', 'Wingamb Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Wingamb Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İL</div>
+            <div class="info-area">
+                <div class="site-name">İlkbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ilkbahis', 'İlkbahis', 'İlkbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">İlkbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betlike</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betlike', 'Betlike', 'Betlike Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betlike Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betticket</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betticket', 'Betticket', 'Betticket Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betticket Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">Bahislion</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bahislion', 'Bahislion', 'Bahislion Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bahislion Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betvole</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betvole', 'Betvole', 'Betvole Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betvole Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betebet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betebet', 'Betebet', 'Betebet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betebet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LO</div>
+            <div class="info-area">
+                <div class="site-name">Lordpalace</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/lordpalace', 'Lordpalace', 'Lordpalace Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Lordpalace Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PR</div>
+            <div class="info-area">
+                <div class="site-name">Primebahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">444FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/primebahis', 'Primebahis', 'Primebahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Primebahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">Bahisbey</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bahisbey', 'Bahisbey', 'Bahisbey Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bahisbey Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İK</div>
+            <div class="info-area">
+                <div class="site-name">İkasbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ikasbet', 'İkasbet', 'İkasbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">İkasbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">Starzbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/starzbet', 'Starzbet', 'Starzbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Starzbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RA</div>
+            <div class="info-area">
+                <div class="site-name">Ramadabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ramadabet', 'Ramadabet', 'Ramadabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Ramadabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">Padişahbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/padisahbet', 'Padişahbet', 'Padişahbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Padişahbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ON</div>
+            <div class="info-area">
+                <div class="site-name">Onwin</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/onwin', 'Onwin', 'Onwin Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Onwin Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">Casinra</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/casinra', 'Casinra', 'Casinra Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Casinra Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betroz</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betroz', 'Betroz', 'Betroz Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betroz Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">Makrobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/makrobet', 'Makrobet', 'Makrobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Makrobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betra</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betra', 'Betra', 'Betra Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betra Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NE</div>
+            <div class="info-area">
+                <div class="site-name">Netbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/netbahis', 'Netbahis', 'Netbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Netbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">Roketbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/roketbet', 'Roketbet', 'Roketbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Roketbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betgar</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betgar', 'Betgar', 'Betgar Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betgar Giriş Yap</button>
+    </div>
     <div class="card">
         <div class="card-header">
             <div class="logo-box">TE</div>
             <div class="info-area">
-                <div class="site-name">Test</div>
-                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">5/5</span></div>
+                <div class="site-name">Teslabahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
             </div>
         </div>
-        <div class="bonus-box"><div class="bonus-value">gemını ananı sıkım</div></div>
-        <button class="btn-gold" onclick="showPopup('https://ocgemını.com', 'Test', 'Test Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Test Giriş Yap</button>
+        <div class="bonus-box"><div class="bonus-value">200FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/teslabahis', 'Teslabahis', 'Teslabahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Teslabahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GA</div>
+            <div class="info-area">
+                <div class="site-name">Ganobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ganobet', 'Ganobet', 'Ganobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Ganobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">YE</div>
+            <div class="info-area">
+                <div class="site-name">Yedibahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/yedibahis', 'Yedibahis', 'Yedibahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Yedibahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EP</div>
+            <div class="info-area">
+                <div class="site-name">Epikbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/epikbahis', 'Epikbahis', 'Epikbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Epikbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Bekabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bekabet', 'Bekabet', 'Bekabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bekabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betci</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betci', 'Betci', 'Betci Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betci Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betbox</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betbox', 'Betbox', 'Betbox Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betbox Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hiltonbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50FS Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hiltonbet', 'Hiltonbet', 'Hiltonbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hiltonbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">Masterbetting</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/masterbetting', 'Masterbetting', 'Masterbetting Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Masterbetting Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SA</div>
+            <div class="info-area">
+                <div class="site-name">Sahabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/sahabet', 'Sahabet', 'Sahabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Sahabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">Stake</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">21$ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/stake', 'Stake', 'Stake Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Stake Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BC</div>
+            <div class="info-area">
+                <div class="site-name">Bcgame</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">5$ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bcgame', 'Bcgame', 'Bcgame Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bcgame Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">XS</div>
+            <div class="info-area">
+                <div class="site-name">Xslot</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/xslot', 'Xslot', 'Xslot Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Xslot Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TI</div>
+            <div class="info-area">
+                <div class="site-name">Tipobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/tipobet', 'Tipobet', 'Tipobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Tipobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SO</div>
+            <div class="info-area">
+                <div class="site-name">Solobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">666₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/solo', 'Solobet', 'Solobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Solobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SÜ</div>
+            <div class="info-area">
+                <div class="site-name">Süpertoto</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/supertotobet', 'Süpertoto', 'Süpertoto Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Süpertoto Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LI</div>
+            <div class="info-area">
+                <div class="site-name">Ligobet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ligobet', 'Ligobet', 'Ligobet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Ligobet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hilarionbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hilarionbet', 'Hilarionbet', 'Hilarionbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hilarionbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DE</div>
+            <div class="info-area">
+                <div class="site-name">Dengebet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/dengebet', 'Dengebet', 'Dengebet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Dengebet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hitbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hitbet', 'Hitbet', 'Hitbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hitbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betoffice</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betoffice', 'Betoffice', 'Betoffice Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betoffice Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GA</div>
+            <div class="info-area">
+                <div class="site-name">Galabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/galabet', 'Galabet', 'Galabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Galabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GR</div>
+            <div class="info-area">
+                <div class="site-name">Grbets</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/grbets', 'Grbets', 'Grbets Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Grbets Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betpir</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betpir', 'Betpir', 'Betpir Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betpir Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betine</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betinee', 'Betine', 'Betine Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betine Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">Bayspin</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/bayspinn', 'Bayspin', 'Bayspin Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Bayspin Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">Heybet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/heybet', 'Heybet', 'Heybet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Heybet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GO</div>
+            <div class="info-area">
+                <div class="site-name">Gobahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/gobonus', 'Gobahis', 'Gobahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Gobahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LE</div>
+            <div class="info-area">
+                <div class="site-name">Leograndbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/leograndbet', 'Leograndbet', 'Leograndbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Leograndbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SP</div>
+            <div class="info-area">
+                <div class="site-name">Spinco</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/spinco', 'Spinco', 'Spinco Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Spinco Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EX</div>
+            <div class="info-area">
+                <div class="site-name">Exonbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/exonbet', 'Exonbet', 'Exonbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Exonbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SÜ</div>
+            <div class="info-area">
+                <div class="site-name">Süperbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/superbet', 'Süperbet', 'Süperbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Süperbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betsin</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betsin', 'Betsin', 'Betsin Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betsin Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DE</div>
+            <div class="info-area">
+                <div class="site-name">Dedebet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/dedebet', 'Dedebet', 'Dedebet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Dedebet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">Maxwin</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/maxwin', 'Maxwin', 'Maxwin Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Maxwin Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DA</div>
+            <div class="info-area">
+                <div class="site-name">Damabet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/damabet', 'Damabet', 'Damabet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Damabet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">Palacebet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/palacebet', 'Palacebet', 'Palacebet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Palacebet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betwoon</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betwoon', 'Betwoon', 'Betwoon Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betwoon Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CR</div>
+            <div class="info-area">
+                <div class="site-name">Cratosbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/cratosbet', 'Cratosbet', 'Cratosbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Cratosbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betwild</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betwild', 'Betwild', 'Betwild Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betwild Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">Hızlıbahis</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/hızlıbahis', 'Hızlıbahis', 'Hızlıbahis Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Hızlıbahis Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">Royalbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/royalbet', 'Royalbet', 'Royalbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Royalbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RA</div>
+            <div class="info-area">
+                <div class="site-name">Radissonbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/radissonbet', 'Radissonbet', 'Radissonbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Radissonbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betsalvador</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betsalvador', 'Betsalvador', 'Betsalvador Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betsalvador Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">Casinofast</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/casinofast', 'Casinofast', 'Casinofast Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Casinofast Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SL</div>
+            <div class="info-area">
+                <div class="site-name">Slotday</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/slotday', 'Slotday', 'Slotday Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Slotday Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RI</div>
+            <div class="info-area">
+                <div class="site-name">Ritzbet</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/ritzbet', 'Ritzbet', 'Ritzbet Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Ritzbet Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">Betasus</div>
+                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">OLA BONUS</span></div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500₺ Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="showPopup('https://shoort.im/betasus', 'Betasus', 'Betasus Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">Betasus Giriş Yap</button>
     </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
     const webapp = window.Telegram.WebApp; webapp.expand();
     function showPopup(url, name, msg) { webapp.showConfirm(msg, (c) => { if(c) webapp.openLink(url); }); }
