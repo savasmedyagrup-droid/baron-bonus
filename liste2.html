@@ -6,30 +6,13 @@
     .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
     .logo-box { width: 55px; height: 55px; background: linear-gradient(45deg, #ff9800, #f44336); color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 24px; box-shadow: 0 4px 10px rgba(255, 152, 0, 0.3); }
     .site-name { font-size: 20px; font-weight: 900; color: #fff; }
-    .rating { color: #ff9800; font-size: 11px; margin-top: 2px; }
+    .rating { color: #ff9800; font-size: 11px; margin-top: 2px; font-weight: bold; }
     .bonus-container { background: rgba(255, 152, 0, 0.1); border-radius: 10px; padding: 12px; margin-bottom: 15px; border: 1px dashed #ff9800; }
     .bonus-label { font-size: 10px; color: #ff9800; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
     .bonus-value { color: #ffffff; font-size: 18px; font-weight: 900; margin-top: 4px; }
     .footer-area { display: flex; align-items: center; gap: 10px; }
-    .btn-kaydol { background: linear-gradient(45deg, #ff9800, #f44336); color: white; border: none; padding: 14px; border-radius: 10px; font-weight: 900; cursor: pointer; flex-grow: 1; font-size: 14px; text-transform: uppercase; transition: 0.3s; }
-    </style></head><body><div class="container">
-    <div class="card">
-        <div class="card-header">
-            <div class="logo-area"><div class="logo-box">TE</div></div>
-            <div class="info-area">
-                <div class="site-name">TEST</div>
-                <div class="rating">⭐⭐⭐⭐⭐ BANKO ARENA</div>
-            </div>
-        </div>
-        <div class="bonus-container">
-            <div class="bonus-label">GÜNCEL ARENA BONUSU</div>
-            <div class="bonus-value">100 TL DENEME BONUSU</div>
-        </div>
-        <div class="footer-area">
-            <div class="methods">🚀 🔥 💰</div>
-            <button class="btn-kaydol" onclick="showPopup('porno.com', 'Test')">ARENAYA GİRİŞ YAP</button>
-        </div>
-    </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
+    .btn-kaydol { background: linear-gradient(45deg, #ff9800, #f44336); color: white; border: none; padding: 14px; border-radius: 10px; font-weight: 900; cursor: pointer; flex-grow: 1; font-size: 13px; text-transform: uppercase; transition: 0.3s; }
+    </style></head><body><div class="container"></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
     const webapp = window.Telegram.WebApp; webapp.expand(); 
     function showPopup(url, name) { webapp.showConfirm(name.toUpperCase() + " Arenasına gidiyorsunuz?", (c) => { if(c) webapp.openLink(url); }); }
     </script></body></html>
