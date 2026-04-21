@@ -12,18 +12,7 @@
         .bonus-box { background: rgba(255, 234, 0, 0.05); border: 1px dashed rgba(255, 234, 0, 0.3); border-radius: 8px; padding: 14px; text-align: center; margin-bottom: 12px; }
         .bonus-value { font-size: 19px; font-weight: 900; color: #fff; }
         .btn-gold { background: linear-gradient(135deg, #fffb00 0%, #ffea00 100%); color: #000; border: none; padding: 14px; border-radius: 8px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; }
-    </style></head><body><div class="container">
-    <div class="card">
-        <div class="card-header">
-            <div class="logo-box">/S</div>
-            <div class="info-area">
-                <div class="site-name">/Start</div>
-                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">5/5</span></div>
-            </div>
-        </div>
-        <div class="bonus-box"><div class="bonus-value">/ilet</div></div>
-        <button class="btn-gold" onclick="showPopup('https:///start', '/Start', '/Start Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">/Start Giriş Yap</button>
-    </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
+    </style></head><body><div class="container"></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
     const webapp = window.Telegram.WebApp; webapp.expand();
     function showPopup(url, name, msg) { webapp.showConfirm(msg, (c) => { if(c) webapp.openLink(url); }); }
     </script></body></html>
