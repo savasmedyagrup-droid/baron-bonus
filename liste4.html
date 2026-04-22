@@ -1,16 +1,16 @@
 <!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        :root { --neon-purple: #bc13fe; --bg: #050505; --card: #121212; }
+        :root { --gold: #ffd700; --sapphire: #0056b3; --bg: #0a0a0a; --card: #161616; }
         body { background-color: var(--bg); color: white; font-family: -apple-system, sans-serif; margin: 0; padding: 15px; -webkit-user-select: none; }
         .container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
-        .card { background: var(--card); border: 1px solid #222; border-radius: 15px; padding: 15px; position: relative; overflow: hidden; }
-        .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--neon-purple); box-shadow: 0 0 10px var(--neon-purple); }
+        .card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
+        .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: linear-gradient(to bottom, var(--gold), var(--sapphire)); }
         .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-        .logo-box { width: 50px; height: 50px; background: #1a1a1a; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--neon-purple); font-size: 20px; text-shadow: 0 0 5px var(--neon-purple); }
+        .logo-box { width: 50px; height: 50px; background: #222; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--gold); font-size: 20px; }
         .site-name { font-size: 18px; font-weight: bold; color: #fff; letter-spacing: 0.5px; }
-        .bonus-box { background: rgba(188, 19, 254, 0.05); border: 1px dashed rgba(188, 19, 254, 0.3); border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 12px; }
-        .bonus-value { font-size: 19px; font-weight: 900; color: #fff; }
-        .btn-purple { background: linear-gradient(135deg, #8b00ff 0%, #bc13fe 100%); color: #fff; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; box-shadow: 0 0 10px rgba(188, 19, 254, 0.4); }
+        .bonus-box { background: rgba(255, 215, 0, 0.03); border: 1px dashed rgba(255, 215, 0, 0.2); border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 12px; }
+        .bonus-value { font-size: 19px; font-weight: 900; color: var(--gold); }
+        .btn-gold { background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%); color: #000; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); }
     </style></head><body><div class="container">
     <div class="card">
         <div class="card-header">
@@ -20,6 +20,6 @@
                 <div class="rating">⭐⭐⭐⭐⭐</div>
             </div>
         </div>
-        <div class="bonus-box"><div class="bonus-value">ttest Deneme Bonusu</div></div>
-        <button class="btn-purple" onclick="window.Telegram.WebApp.showConfirm('test Sitesine Gidiyorsunuz Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://.dom')})">test Giriş Yap</button>
+        <div class="bonus-box"><div class="bonus-value">test Deneme Bonusu</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('test Sitesine Gidiyorsunuz Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://tets')})">test Giriş Yap</button>
     </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>window.Telegram.WebApp.expand();</script></body></html>
