@@ -1,31 +1,29 @@
-<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>
-    body { background-color: #000000; color: white; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 15px; }
-    .container { display: flex; flex-direction: column; gap: 20px; }
-    .card { background: linear-gradient(145deg, #121212, #080808); border-radius: 15px; padding: 18px; border: 1px solid #1a1a1a; box-shadow: 0 10px 20px rgba(0,0,0,0.8); position: relative; overflow: hidden; }
-    .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: #00ffff; }
-    .card-header { display: flex; align-items: center; gap: 15px; margin-bottom: 15px; }
-    .logo-box { width: 55px; height: 55px; background: linear-gradient(45deg, #00ffff, #008888); color: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 24px; }
-    .site-name { font-size: 20px; font-weight: 900; color: #fff; }
-    .rating { color: #00ffff; font-size: 13px; font-weight: 900; margin-top: 2px; }
-    .bonus-container { background: rgba(0, 255, 255, 0.05); border-radius: 10px; padding: 15px; margin-bottom: 15px; text-align: center; border: 1px solid #1a1a1a; }
-    .bonus-value { color: #ffffff; font-size: 19px; font-weight: 900; }
-    .btn-kaydol { background: linear-gradient(45deg, #00ffff, #00aaaa); color: white; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; font-size: 15px; text-transform: uppercase; }
-    </style></head><body><div class="container">
-    <div class="card">
-        <div class="card-header">
-            <div class="logo-area"><div class="logo-box">/S</div></div>
-            <div class="info-area">
-                <div class="site-name">/Start</div>
-                <div class="rating">⭐⭐⭐⭐⭐ <span class="label">5/5</span></div>
-            </div>
-        </div>
-        <div class="bonus-container">
-            <div class="bonus-value">/ilet</div>
-        </div>
-        <div class="footer-area">
-            <button class="btn-kaydol" onclick="showPopup('https:///start', '/Start', '/Start Sitesine Gidiyorsunuz Onaylıyor Musunuz ?')">/Start Giriş Yap</button>
-        </div>
-    </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>
-    const webapp = window.Telegram.WebApp; webapp.expand(); 
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root { --arena-blue: #0088ff; --bg: #000000; --card: #111111; }
+        body { background-color: var(--bg); color: white; font-family: -apple-system, sans-serif; margin: 0; padding: 15px; }
+        .container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
+        .card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 15px; position: relative; overflow: hidden; }
+        .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: var(--arena-blue); }
+        .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .logo-box { width: 50px; height: 50px; background: #222; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--arena-blue); font-size: 20px; }
+        .site-name { font-size: 18px; font-weight: bold; color: #fff; }
+        .rating { font-size: 11px; color: var(--arena-blue); margin-top: 2px; font-weight: bold; }
+        .bonus-box { background: rgba(0, 136, 255, 0.05); border: 1px dashed rgba(0, 136, 255, 0.3); border-radius: 8px; padding: 14px; text-align: center; margin-bottom: 12px; }
+        .bonus-value { font-size: 19px; font-weight: 900; color: #fff; }
+        .btn-arena { background: linear-gradient(135deg, #004488 0%, #0088ff 100%); color: #fff; border: none; padding: 14px; border-radius: 8px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; }
+    </style></head><body><div class="container" id="main-container"></div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+    const webapp = window.Telegram.WebApp; webapp.expand();
+    let currentData = [];
     function showPopup(url, name, msg) { webapp.showConfirm(msg, (c) => { if(c) webapp.openLink(url); }); }
+    async function checkUpdates() {
+        try {
+            const response = await fetch('https://raw.githubusercontent.com/savasmedyagrup-droid/baron-bonus/main/bonuslar_arena.json?v=' + Date.now());
+            const newData = await response.json();
+            if (JSON.stringify(currentData) !== JSON.stringify(newData)) { window.location.reload(); }
+        } catch (e) {}
+    }
+    setInterval(checkUpdates, 10000);
     </script></body></html>
