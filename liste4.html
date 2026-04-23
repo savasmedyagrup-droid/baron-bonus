@@ -1,25 +1,1475 @@
-<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        :root { --gold: #ffd700; --sapphire: #0056b3; --bg: #0a0a0a; --card: #161616; }
-        body { background-color: var(--bg); color: white; font-family: -apple-system, sans-serif; margin: 0; padding: 15px; -webkit-user-select: none; }
-        .container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; }
-        .card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); }
-        .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: linear-gradient(to bottom, var(--gold), var(--sapphire)); }
-        .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-        .logo-box { width: 50px; height: 50px; background: #222; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--gold); font-size: 20px; }
-        .site-name { font-size: 18px; font-weight: bold; color: #fff; letter-spacing: 0.5px; }
-        .bonus-box { background: rgba(255, 215, 0, 0.03); border: 1px dashed rgba(255, 215, 0, 0.2); border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 12px; }
-        .bonus-value { font-size: 19px; font-weight: 900; color: var(--gold); }
-        .btn-gold { background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%); color: #000; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2); }
-    </style></head><body><div class="container">
+<!DOCTYPE html><html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>:root { --gold: #ffd700; --sapphire: #0056b3; --bg: #0a0a0a; --card: #161616; } body { background: var(--bg); color: white; font-family: sans-serif; margin: 0; padding: 15px; -webkit-user-select: none; } .container { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; } .card { background: var(--card); border: 1px solid #222; border-radius: 12px; padding: 15px; position: relative; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.5); } .card::before { content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px; background: linear-gradient(to bottom, var(--gold), var(--sapphire)); } .card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; } .logo-box { width: 50px; height: 50px; background: #222; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #333; color: var(--gold); font-size: 20px; } .site-name { font-size: 18px; font-weight: bold; color: #fff; } .bonus-box { background: rgba(255, 215, 0, 0.03); border: 1px dashed rgba(255, 215, 0, 0.2); border-radius: 10px; padding: 14px; text-align: center; margin-bottom: 12px; } .bonus-value { font-size: 19px; font-weight: 900; color: var(--gold); } .btn-gold { background: linear-gradient(135deg, #ffd700 0%, #b8860b 100%); color: #000; border: none; padding: 14px; border-radius: 10px; font-weight: 900; width: 100%; cursor: pointer; text-transform: uppercase; font-size: 14px; }</style></head><body><div class="container">
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">ROMABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ROMABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/romabet')})">ROMABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETROZ</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETROZ Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betroz')})">BETROZ Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETSIN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETSIN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betsin')})">BETSIN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">HEPBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1880 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HEPBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hepbet')})">HEPBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETKOM</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETKOM Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betkom')})">BETKOM Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PR</div>
+            <div class="info-area">
+                <div class="site-name">PRADABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PRADABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/pradabet')})">PRADABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GO</div>
+            <div class="info-area">
+                <div class="site-name">GOBAHİS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GOBAHİS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/gobahis')})">GOBAHİS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">HEPSİBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HEPSİBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/hepsibet')})">HEPSİBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GR</div>
+            <div class="info-area">
+                <div class="site-name">GRANDPASHABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GRANDPASHABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/grandpasha')})">GRANDPASHABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SU</div>
+            <div class="info-area">
+                <div class="site-name">SUPERTOTOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SUPERTOTOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/supertotobet')})">SUPERTOTOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">CASIVERA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('CASIVERA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/casivera')})">CASIVERA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MARİOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MARİOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/mariobet')})">MARİOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TA</div>
+            <div class="info-area">
+                <div class="site-name">TARAFBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TARAFBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/tarafbett')})">TARAFBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DO</div>
+            <div class="info-area">
+                <div class="site-name">DODOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('DODOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/dodo')})">DODOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">OT</div>
+            <div class="info-area">
+                <div class="site-name">OTOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('OTOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/otobet')})">OTOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MARIOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MARIOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/mariobonus')})">MARIOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">BAHISCOM</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BAHISCOM Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bahisbonus')})">BAHISCOM Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">CASICOSTA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('CASICOSTA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/casicosta')})">CASICOSTA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">ROBOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ROBOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/robobet')})">ROBOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">STARORA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('STARORA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/starora')})">STARORA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">FI</div>
+            <div class="info-area">
+                <div class="site-name">FIXBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('FIXBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/fixbet')})">FIXBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MATADORBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MATADORBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/matador')})">MATADORBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ZB</div>
+            <div class="info-area">
+                <div class="site-name">ZBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ZBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/zbahis')})">ZBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">PADIŞAHBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PADIŞAHBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/padisahbet')})">PADIŞAHBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">CASINRA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('CASINRA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/casinra')})">CASINRA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MAKROBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MAKROBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/makrobet')})">MAKROBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETGAR</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETGAR Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betgar')})">BETGAR Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GA</div>
+            <div class="info-area">
+                <div class="site-name">GANOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GANOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ganobet')})">GANOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">YE</div>
+            <div class="info-area">
+                <div class="site-name">YEDIBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('YEDIBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/yedibahis')})">YEDIBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EP</div>
+            <div class="info-area">
+                <div class="site-name">EPIKBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('EPIKBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/epikbahis')})">EPIKBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SA</div>
+            <div class="info-area">
+                <div class="site-name">SAHABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SAHABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/sahabet')})">SAHABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">XS</div>
+            <div class="info-area">
+                <div class="site-name">XSLOT</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('XSLOT Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/xslot')})">XSLOT Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SÜ</div>
+            <div class="info-area">
+                <div class="site-name">SÜPERTOTO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SÜPERTOTO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/supertotobet')})">SÜPERTOTO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LE</div>
+            <div class="info-area">
+                <div class="site-name">LEOGRANDBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1000 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LEOGRANDBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/leograndbet')})">LEOGRANDBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TR</div>
+            <div class="info-area">
+                <div class="site-name">TRBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TRBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/trbet')})">TRBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETTICKET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETTICKET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betticket')})">BETTICKET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">STARZBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('STARZBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/starzbet')})">STARZBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ON</div>
+            <div class="info-area">
+                <div class="site-name">ONWIN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ONWIN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/onwin')})">ONWIN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TI</div>
+            <div class="info-area">
+                <div class="site-name">TIPOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TIPOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/tipobet')})">TIPOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LI</div>
+            <div class="info-area">
+                <div class="site-name">LIGOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">750 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LIGOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ligobet')})">LIGOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SO</div>
+            <div class="info-area">
+                <div class="site-name">SOLOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">666 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SOLOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/solo')})">SOLOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VE</div>
+            <div class="info-area">
+                <div class="site-name">VENOMBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">555 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('VENOMBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/venombet')})">VENOMBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">Lİ</div>
+            <div class="info-area">
+                <div class="site-name">LİZABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LİZABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/lizabet')})">LİZABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">BAHİSBEY</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BAHİSBEY Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/bahisbey')})">BAHİSBEY Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VU</div>
+            <div class="info-area">
+                <div class="site-name">VURDUM</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('VURDUM Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/vurdum')})">VURDUM Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İK</div>
+            <div class="info-area">
+                <div class="site-name">İKİMİSLİ</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('İKİMİSLİ Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/ikimisli')})">İKİMİSLİ Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GR</div>
+            <div class="info-area">
+                <div class="site-name">GRANDPASHA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GRANDPASHA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/grandpasha')})">GRANDPASHA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">PASHAGAMING</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PASHAGAMING Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/pashagaming')})">PASHAGAMING Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETORBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETORBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betorbet')})">BETORBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TR</div>
+            <div class="info-area">
+                <div class="site-name">TRUVABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TRUVABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/truvabet')})">TRUVABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">VE</div>
+            <div class="info-area">
+                <div class="site-name">VENÜSBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('VENÜSBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/venusbet')})">VENÜSBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LU</div>
+            <div class="info-area">
+                <div class="site-name">LUXBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LUXBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/luxbet')})">LUXBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">TR</div>
+            <div class="info-area">
+                <div class="site-name">TRBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TRBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/trbet')})">TRBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETPIPO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETPIPO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betpipo')})">BETPIPO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BU</div>
+            <div class="info-area">
+                <div class="site-name">BULLBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BULLBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bullbahis')})">BULLBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ES</div>
+            <div class="info-area">
+                <div class="site-name">ESBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ESBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/esbet')})">ESBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">JO</div>
+            <div class="info-area">
+                <div class="site-name">JOJOVA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('JOJOVA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/jojova')})">JOJOVA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">WI</div>
+            <div class="info-area">
+                <div class="site-name">WINGAMB</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('WINGAMB Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/wingamb')})">WINGAMB Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İK</div>
+            <div class="info-area">
+                <div class="site-name">İKASBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('İKASBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ikasbet')})">İKASBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">ROKETBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ROKETBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/roketbet')})">ROKETBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HILARIONBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HILARIONBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hilarionbet')})">HILARIONBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GA</div>
+            <div class="info-area">
+                <div class="site-name">GALABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GALABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/galabet')})">GALABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETPIR</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETPIR Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betpir')})">BETPIR Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">BAYSPIN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BAYSPIN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bayspinn')})">BAYSPIN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">HEYBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HEYBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/heybet')})">HEYBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GO</div>
+            <div class="info-area">
+                <div class="site-name">GOBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GOBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/gobonus')})">GOBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">PALACEBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PALACEBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/palacebet')})">PALACEBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CR</div>
+            <div class="info-area">
+                <div class="site-name">CRATOSBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('CRATOSBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/cratosbet')})">CRATOSBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETASUS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">500 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETASUS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betasus')})">BETASUS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EP</div>
+            <div class="info-area">
+                <div class="site-name">EPYBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('EPYBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/epybet')})">EPYBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETBON</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETBON Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betbon')})">BETBON Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ME</div>
+            <div class="info-area">
+                <div class="site-name">MERITWIN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MERITWIN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/meritwin')})">MERITWIN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PA</div>
+            <div class="info-area">
+                <div class="site-name">PALAZZO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PALAZZO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/palazzo')})">PALAZZO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RA</div>
+            <div class="info-area">
+                <div class="site-name">RAMADABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('RAMADABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ramadabet')})">RAMADABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MAXWIN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MAXWIN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/maxwin')})">MAXWIN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RA</div>
+            <div class="info-area">
+                <div class="site-name">RADISSONBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('RADISSONBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/radissonbet')})">RADISSONBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RI</div>
+            <div class="info-area">
+                <div class="site-name">RITZBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">300 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('RITZBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ritzbet')})">RITZBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LO</div>
+            <div class="info-area">
+                <div class="site-name">LORDPALACE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LORDPALACE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/lordpalace')})">LORDPALACE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MALTCASINO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MALTCASINO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/malt')})">MALTCASINO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">XB</div>
+            <div class="info-area">
+                <div class="site-name">XBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('XBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/xbahis')})">XBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">AC</div>
+            <div class="info-area">
+                <div class="site-name">ACARBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ACARBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/acarbet')})">ACARBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SL</div>
+            <div class="info-area">
+                <div class="site-name">SLOTO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SLOTO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/sloto')})">SLOTO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İL</div>
+            <div class="info-area">
+                <div class="site-name">İLKBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('İLKBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ilkbahis')})">İLKBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETLIKE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETLIKE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betlike')})">BETLIKE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BA</div>
+            <div class="info-area">
+                <div class="site-name">BAHISLION</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BAHISLION Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bahislion')})">BAHISLION Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETVOLE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETVOLE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betvole')})">BETVOLE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETEBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETEBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betebet')})">BETEBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BEKABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BEKABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bekabet')})">BEKABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MA</div>
+            <div class="info-area">
+                <div class="site-name">MASTERBETTING</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MASTERBETTING Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/masterbetting')})">MASTERBETTING Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DE</div>
+            <div class="info-area">
+                <div class="site-name">DENGEBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('DENGEBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/dengebet')})">DENGEBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">EX</div>
+            <div class="info-area">
+                <div class="site-name">EXONBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('EXONBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/exonbet')})">EXONBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SÜ</div>
+            <div class="info-area">
+                <div class="site-name">SÜPERBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SÜPERBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/superbet')})">SÜPERBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DE</div>
+            <div class="info-area">
+                <div class="site-name">DEDEBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('DEDEBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/dedebet')})">DEDEBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">DA</div>
+            <div class="info-area">
+                <div class="site-name">DAMABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('DAMABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/damabet')})">DAMABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETWOON</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETWOON Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betwoon')})">BETWOON Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HIZLIBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HIZLIBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hızlıbahis')})">HIZLIBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">RO</div>
+            <div class="info-area">
+                <div class="site-name">ROYALBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ROYALBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/royalbet')})">ROYALBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">CA</div>
+            <div class="info-area">
+                <div class="site-name">CASINOFAST</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('CASINOFAST Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/casinofast')})">CASINOFAST Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SL</div>
+            <div class="info-area">
+                <div class="site-name">SLOTDAY</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SLOTDAY Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/slotday')})">SLOTDAY Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">MI</div>
+            <div class="info-area">
+                <div class="site-name">MILBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MILBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/milbet')})">MILBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETRA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETRA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betra')})">BETRA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NE</div>
+            <div class="info-area">
+                <div class="site-name">NETBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('NETBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/netbahis')})">NETBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SP</div>
+            <div class="info-area">
+                <div class="site-name">SPINCO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SPINCO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/spinco')})">SPINCO Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETWILD</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETWILD Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betwild')})">BETWILD Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETRUPI</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">111 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETRUPI Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betrupi')})">BETRUPI Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NO</div>
+            <div class="info-area">
+                <div class="site-name">NORABAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('NORABAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/norabahis')})">NORABAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GE</div>
+            <div class="info-area">
+                <div class="site-name">GETTOBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GETTOBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/gettobet')})">GETTOBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HITBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HITBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hitbet')})">HITBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETOFFICE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETOFFICE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betoffice')})">BETOFFICE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GR</div>
+            <div class="info-area">
+                <div class="site-name">GRBETS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GRBETS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/grbets')})">GRBETS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETINE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETINE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betinee')})">BETINE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETSALVADOR</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">100 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETSALVADOR Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betsalvador')})">BETSALVADOR Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ST</div>
+            <div class="info-area">
+                <div class="site-name">STAKE</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">21 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('STAKE Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/stake')})">STAKE Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BC</div>
+            <div class="info-area">
+                <div class="site-name">BCGAME</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">5 TL DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BCGAME Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/bcgame')})">BCGAME Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">OR</div>
+            <div class="info-area">
+                <div class="site-name">ORISBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">2000 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('ORISBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/orisbet')})">ORISBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HE</div>
+            <div class="info-area">
+                <div class="site-name">HEPBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">1880 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HEPBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/hepbet')})">HEPBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">SL</div>
+            <div class="info-area">
+                <div class="site-name">SLOGANBAHİS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">777 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('SLOGANBAHİS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/sloganbahis')})">SLOGANBAHİS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">İB</div>
+            <div class="info-area">
+                <div class="site-name">İBIZABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">777 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('İBIZABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ibizabet')})">İBIZABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">LO</div>
+            <div class="info-area">
+                <div class="site-name">LOCABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">444 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('LOCABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/locabet')})">LOCABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HU</div>
+            <div class="info-area">
+                <div class="site-name">HUQQABET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">444 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HUQQABET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/huqqabet')})">HUQQABET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">ME</div>
+            <div class="info-area">
+                <div class="site-name">MERSOBAHİS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">444 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('MERSOBAHİS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/mersobahis')})">MERSOBAHİS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">PR</div>
+            <div class="info-area">
+                <div class="site-name">PRIMEBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">444 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('PRIMEBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/primebahis')})">PRIMEBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">AM</div>
+            <div class="info-area">
+                <div class="site-name">AMGBAHİS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">333 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('AMGBAHİS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/amgbahis')})">AMGBAHİS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HILBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">333 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HILBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hilbet')})">HILBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HA</div>
+            <div class="info-area">
+                <div class="site-name">HARBİWİN</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HARBİWİN Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/harbiwin')})">HARBİWİN Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BELUGA</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">250 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BELUGA Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/beluga')})">BELUGA Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETCİ</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETCİ Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://urllink.live/betci')})">BETCİ Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HIZLICASINO</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HIZLICASINO Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hizlicasino')})">HIZLICASINO Giriş Yap</button>
+    </div>
     <div class="card">
         <div class="card-header">
             <div class="logo-box">TE</div>
             <div class="info-area">
-                <div class="site-name">test</div>
+                <div class="site-name">TESLABAHIS</div>
                 <div class="rating">⭐⭐⭐⭐⭐</div>
             </div>
         </div>
-        <div class="bonus-box"><div class="bonus-value">test Deneme Bonusu</div></div>
-        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('test Sitesine Gidiyorsunuz Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://tets')})">test Giriş Yap</button>
+        <div class="bonus-box"><div class="bonus-value">200 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('TESLABAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/teslabahis')})">TESLABAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">BE</div>
+            <div class="info-area">
+                <div class="site-name">BETBOX</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">200 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('BETBOX Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/betbox')})">BETBOX Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">GO</div>
+            <div class="info-area">
+                <div class="site-name">GOLDENBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('GOLDENBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/goldenbahis')})">GOLDENBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NE</div>
+            <div class="info-area">
+                <div class="site-name">NEROBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('NEROBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/nerobet')})">NEROBET Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">NG</div>
+            <div class="info-area">
+                <div class="site-name">NGSBAHIS</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('NGSBAHIS Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/ngsbahis')})">NGSBAHIS Giriş Yap</button>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="logo-box">HI</div>
+            <div class="info-area">
+                <div class="site-name">HILTONBET</div>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+        <div class="bonus-box"><div class="bonus-value">50 FS DENEME BONUSU</div></div>
+        <button class="btn-gold" onclick="window.Telegram.WebApp.showConfirm('HILTONBET Onaylıyor Musunuz ?', (c)=>{if(c)window.Telegram.WebApp.openLink('https://shoort.im/hiltonbet')})">HILTONBET Giriş Yap</button>
     </div></div><script src="https://telegram.org/js/telegram-web-app.js"></script><script>window.Telegram.WebApp.expand();</script></body></html>
